@@ -9,7 +9,7 @@ use models::order::Order;
 /// Asynchronously generate a vector of random orders with random delays
 #[tokio::main]
 async fn main() {
-    let orders: Vec<Order> = generate_orders(100).await;
+    let orders: Vec<Order> = generate_orders(10).await;
 
     // Queues to hold unmatched orders
     let mut buy_queue: Vec<Order> = Vec::new();
