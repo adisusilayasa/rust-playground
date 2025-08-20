@@ -1,0 +1,10 @@
+[package]
+name = "rust_playground"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Tokio for async runtime
+tokio = { version = "1", features = ["full"] }
+# Use latest (post-deprecation) Rand crate API
+rand = "0.9.0"
